@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b0b0b0; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+ 
+  .calculator {
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+ 
+  .display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9; 
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .display input {
+    width: calc(100% - 50px);
+    height: 40px;
+    font-size: 1.5em;
+    text-align: right;
+    border: none;
+    padding: 5px;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .display button {
+    width: 50px;
+    height: 40px;
+    background-color: #34b6af; 
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .buttons {
+    display: flex;
+  }
+  
+  
+  .number-buttons {
+    flex: 3; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px;
+    padding: 10px;
+    background-color: #1d1d1d; 
+  }
+  
+  .number-buttons button {
+    font-size: 1.2em;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff; 
+    background-color: #333; 
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  
+  .number-buttons button:hover {
+    background-color: #444;
+  }
+  
+  
+  .operator-buttons {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 5px;
+    padding: 10px;
+    background-color: #c4c4c4; 
+  }
+  
+  .operator-buttons button {
+    font-size: 1.2em;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #000; 
+    background-color: #d6d6d6; 
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  
+  .operator-buttons button:hover {
+    background-color: #bbb;
+  }
+  
+  
